@@ -36,17 +36,19 @@ public class Java8Features {
 
 
             //without java 8 feature to implement first non repeated character
-            String s1 = "welcometojavaworld";
+            String s1 = "rgrgrg";
             boolean flag = true;
-            for(char character:s.toCharArray()){
+            for(char character:s1.toCharArray()){
+                System.out.println("First index of::: "+s1.indexOf(character));
+                System.out.println("Last index of::: "+s1.lastIndexOf(character));
                if(s1.indexOf(character)==s1.lastIndexOf(character)){
-                   System.out.println("There is a first  repeated character  "+character);
+                   System.out.println("There is a first non repeated character  "+character);
                    flag = false;
                    break;
                }
            }
           if(flag){
-                System.out.println("There is no repeated character");
+                System.out.println("There is no non repeated character");
           }
 
           //First Second non repeated character given string
